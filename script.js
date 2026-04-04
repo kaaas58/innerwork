@@ -37,20 +37,20 @@ function setActiveLink() {
 
 window.addEventListener('scroll', setActiveLink, { passive: true });
 
-// --- Mobile menu toggle (nav-right container) ---
-const navToggle = document.getElementById('navToggle');
-const navRight  = document.querySelector('.nav-right');
+// --- Mobile menu toggle ---
+const navToggle  = document.getElementById('navToggle');
+const navOverlay = document.getElementById('navOverlay');
 
 navToggle.addEventListener('click', () => {
-  const isOpen = navRight.classList.toggle('open');
+  const isOpen = navOverlay.classList.toggle('open');
   navToggle.classList.toggle('open', isOpen);
   navToggle.setAttribute('aria-label', isOpen ? 'Menü schließen' : 'Menü öffnen');
 });
 
-// Close menu on link click (mobile)
-navRight.querySelectorAll('a').forEach(link => {
+// Close on link click
+navOverlay.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
-    navRight.classList.remove('open');
+    navOverlay.classList.remove('open');
     navToggle.classList.remove('open');
   });
 });
