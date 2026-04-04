@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InnerWork — im inneren</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <span class="logo-mark">◈</span>
+        InnerWork <span class="logo-sub">— im inneren</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-right">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#krisen">Lebenskrisen</a></li>
+          <li><a href="#wer-bin-ich">Wer bin ich?</a></li>
+          <li><a href="#gegenwart">Gegenwart</a></li>
+          <li><a href="#werkzeuge">Werkzeuge</a></li>
+          <li><a href="#zufriedenheit">Zufriedenheit</a></li>
+          <li><a href="#weg">Der Weg</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Design wechseln" title="Hell/Dunkel">
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" style="display:none">
+            <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-pattern"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Ein Ort der Stille und des Erkennens</p>
+      <h1 class="hero-title">
+        Nicht besser<br />als andere.<br />
+        <em>Näher an dir selbst.</em>
+      </h1>
+      <p class="hero-sub">
+        Der Weg beginnt nicht irgendwann. Er beginnt dort, wo du gerade stehst. 
+        <br/>
+        Und er beginnt jetzt. mach dich ehrlich wenn du heute nicht beginnst wieso solltest du es morgen tun?
+        <br>
+        Das leben ist endlich und der weg zum entwickeln ist nicht gerade, er ist es aber definitiv wert ihn zu gehen jeden Tag.
+        <br/>
+        Das wirst du nach und nach merken, dass kann ich gartantieren.
+      </p>
+      <a href="#krisen" class="btn-scroll">
+        <span>Weiterlesen</span>
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M10 4v12M4 10l6 6 6-6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+    <div class="hero-quote-badge">
+      <p>The wealthiest thing, in live<br/>IS OWNING<br/>your life."</p>
+    </div>
+  </section>
+
+  <!-- INTRO BAND -->
+  <div class="band">
+    <div class="band-inner">
+      <span>Stoizismus</span>
+      <span class="sep">◈</span>
+      <span>Phillosophie</span>
+      <span class="sep">◈</span>
+      <span>Dankbarkeit</span>
+      <span class="sep">◈</span>
+      <span>Resilienz</span>
+      <span class="sep">◈</span>
+      <span>Selbstbetrachtung</span>
+      <span class="sep">◈</span>
+      <span>Radikale Akzeptanz</span>
+      <span class="sep">◈</span>
+      <span>Gewahrsein</span>
+    </div>
+  </div>
+
+  <!-- LEBENSKRISEN -->
+  <section class="section section-dark" id="krisen">
+    <div class="container">
+      <h2 class="section-split-heading">Lebenskrisen<br/><em>als Lehrer</em></h2>
+      <div class="section-grid">
+        <div class="section-text">
+          <p class="lead">
+            Eine Krise fühlt sich in ihr manchmal wie das ende an. Aber vielleicht ist sie auch ein Durchbruch — wenn man bereit ist hinzuschauen. Anzunehmen in ihr zu stecken. Aus ihr mit neuer stärke hervorzugehen.
+          </p>
+          <p>
+            Lebenskrisen haben etwas Brutales an sich. Sie kommen ungerufen, sie zwingen uns in die Knie, sie stellen alles in Frage, was wir zu wissen glaubten. Und doch — kaum jemand, der tiefgreifend gewachsen ist, gerade aus einer, durch eine Krise.
+          </p>
+          <p>
+            Das bedeutet nicht, dass Schmerz schön ist. Oder dass man ihn herbeirufen soll. Es bedeutet nur: Er trägt etwas in sich, das wenn man in, die Kriese durchlebt und daran wächst es einen verändern kann im Nachhinein im positiven Sinne, wenn man durchlebt und verarbeitet statt nur zu betäuben. Weg laufen hilft nur bedingt und temporär.
+          </p>
+          <blockquote>
+            „If you do what you always did, you will get what you always got."
+          </blockquote>
+          <p>
+            Krisen brechen alte Muster auf. Sie machen Raum. Die Frage ist nicht, ob das wehtut — natürlich tut es das. Die Frage ist: Was lernst du darüber, wer du wirklich bist, wie du bist? Und auch warum du so bis. Dass su es ändern musst oder dass es ok ist so zu sein. Auch Schwächen anzunehmen und zu akzeptieren, deine Verschieden Fasetten zu integrieren. Das kann dich stabiler machen und mehr und vorallem tiefer zu  dir führen, dich resilienter machen und dich in dir ruhen lassen.
+          </p>
+        </div>
+        <div class="section-aside">
+          <div class="card-highlight">
+            <div class="card-icon">⟳</div>
+            <h3>Aus Krisen lernen</h3>
+            <ul>
+              <li>Krisen als Spiegel, nicht als Strafe</li>
+              <li>Die Subjektive aufs Leben kann dass ganze <br/>
+                leben nur durch innere Arbeit ändern. <br/>
+                Ich wünschte du würdest dei relevanz <br/>
+                dieses Satzes jetzt schon erkennen können.</li>
+              <li>Scheitern ist Teil des Weges, ohne Fehler kannst du nichts lernen</li>
+              <li>Jeder Tiefpunkt birgt eine Frage, wenn du es zulässt. Ehrlich offen dafür bist.</li>
+            </ul>
+          </div>
+          <div class="aurelius-quote">
+            <p>„Die Hindernisse beim Handeln fördern das Handeln. Was im Weg steht, wird zum Weg."</p>
+            <cite>— Marcus Aurelius</cite>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WER BIN ICH -->
+  <section class="section section-mid" id="wer-bin-ich">
+    <div class="container">
+      <h2 class="section-center-title">
+        Wer<br/><em>bin ich?</em>
+      </h2>
+      <p class="section-center-lead">
+        Du bist nicht dein Körper. Nicht deine Gedanken. Nicht dein Beruf. Nicht die Rolle, die andere für dich vorgesehen haben. Wer ist dass ich? Wo sitzt es? 
+        <br>
+        Der Beobachter kann niemals das beobachtete sein. Wer bist du dann wenn du dein Denken beobachten kanns?
+      </p>
+
+      <div class="identity-grid">
+        <div class="identity-card">
+          <div class="identity-cross">✗</div>
+          <h4>Ich bin nicht mein Körper</h4>
+          <p>Er ist das Fahrzeug, nicht der Fahrer. Er verändert sich, altert, zerbricht — und doch bleibt da etwas dass nicht altert wie der Körper, das beobachtet wie gedacht wird.</p>
+        </div>
+        <div class="identity-card">
+          <div class="identity-cross">✗</div>
+          <h4>Ich bin nicht meine Gedanken</h4>
+          <p>Gedanken kommen und gehen wie Wolken. Wer sie beobachtet, ist nicht das Gewölk selbst. Zu viel denken, zu wenig fühlen — ein vertrautes Ungleichgewicht. Eine Schande ist es wenn der Geist verbraucht ist bevor der Körper es ist.</p>
+        </div>
+        <div class="identity-card">
+          <div class="identity-cross">✗</div>
+          <h4>Ich bin nicht mein Beruf</h4>
+          <p>Was du tust, ist nicht wer du bist. Eine Gesellschaft, die uns nach Funktion bewertet, hat uns eine gefährliche Gleichung beigebracht.</p>
+        </div>
+        <div class="identity-card">
+          <div class="identity-cross">✗</div>
+          <h4>Ich bin nicht meine Vergangenheit</h4>
+          <p>Was geschah, hat dich geformt — aber es definiert nicht, wohin du gehst. Das Vergangene ist unveränderlich. Du selbst nicht.</p>
+        </div>
+      </div>
+
+      <div class="identity-answer">
+        <p class="identity-question">Dann also: Wer bist du?</p>
+        <p>
+          Vielleicht ist das die wertvollste Frage des Lebens — und sie verdient keine schnelle Antwort. Jeder Mensch sieht die Welt durch sein eigenes Prisma, und diese Wahrnehmungen überschneiden sich nur teilweise. Deine innere Welt ist einzigartig. Sie zu annehmend anzukennen und um der Gründe zu wissen — das ist Selbstrespekt. Andere Sichten zu akzeptieren auch wenn mann diese nicht teilen mag das ist Akzeptanz und ein werrt der uns zu teilen immer mehr entgleitet. Das entscheidet aber immer noch jederMensch in sich selbst.
+        </p>
+        <p>
+          Erwachsen werden ist kein Ende des Lernens oder Wachsens. Es ist der Beginn einer anderen, tieferen Art davon.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GEGENWART -->
+  <section class="section section-dark" id="gegenwart">
+    <div class="container">
+      <h2 class="section-split-heading">Die Gegenwart<br/><em>genießen</em></h2>
+      <div class="section-grid reverse">
+        <div class="section-aside">
+          <div class="time-visual">
+            <div class="time-ring">
+              <div class="time-center">
+                <span>Jetzt</span>
+              </div>
+            </div>
+            <p class="time-caption">Der einzige Augenblick,<br/>in dem du wirklich lebst.</p>
+          </div>
+          <div class="aurelius-quote">
+            <p>„Beschränke dich auf die Gegenwart."</p>
+            <cite>— Marcus Aurelius</cite>
+          </div>
+        </div>
+        <div class="section-text">
+          <p class="lead">
+            Du kannst weder in der toten vergangenheit, noch inm der ungebohrenen Zukunft leben und handeln. Lernen und ausrichten aus Vergangenheit und in die Zukunft, ja. Aber die Gegenwart ist der einzige Augenblick, in dem du wirklich lebst, in dem du wirklich einfluss hast, dass einzige lebendige — Die Gegenwart ist gleichzeitig der Ort, an dem du deine Zukunft erschaffst. Der einzig immerwährende Augenblick der als bald zur Vergangeheit erstarrt.
+          </p>
+          <p>
+            Wir planen, grübeln, bereuen — und vergessen dabei, dass das Leben gerade passiert. Nicht später. Jetzt. In diesem Atemzug passiert dein Leben währen du vielleicht in der Vergangenheit festhängst oder in Zweifeln und Ängsten über die Zukunft, während dein Geist im Autopilot durch den Allltag stolpert. Wenn du so bist bist du gefangen nicht da. Du lebst nicht.
+          </p>
+          <blockquote>
+            „Das Leben ist zu kurz, um es mit Respektlosigkeit sich selbst gegenüber zu verbringen."
+          </blockquote>
+          <p>
+            Bsp. Gewahrsein — das buddhistische Konzept des Bewusstseins im Moment — ist kein esoterisches Ideal. Es ist eine Praxis. Eine, die man üben kann. Jeden Tag. Auch an schlechten Tagen.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WERKZEUGE -->
+  <section class="section section-tools" id="werkzeuge">
+    <div class="container">
+      <h2 class="section-center-title">
+        Werkzeuge<br/><em>für den Weg</em>
+      </h2>
+      <p class="section-center-lead">
+        Philosophie ist kein Luxus für Akademiker. Sie ist ein praktisches Werkzeug — für das echte Leben, für echte Krisen, für echte Entscheidungen.
+      </p>
+
+      <div class="tools-grid">
+        <div class="tool-card">
+          <div class="tool-icon">⚡</div>
+          <h3>Stoizismus</h3>
+          <p>Unterscheide zwischen dem, was du ändern kannst, und dem, was du nicht ändern kannst. Dein Wirkraum ist dein Kompass. Alles außerhalb davon: loslassen.</p>
+          <div class="tool-key">Schlüsselprinzip: <strong>Dichotomie der Kontrolle</strong></div>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon">☯</div>
+          <h3>Buddhismus</h3>
+          <p>Alles verändert sich. Leiden entsteht durch Anhaften. Gewahrsein — das stille Beobachten des eigenen Geistes — ist der Weg zur inneren Freiheit.</p>
+          <div class="tool-key">Schlüsselprinzip: <strong>Impermanenz &amp; Gewahrsein</strong></div>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon">◎</div>
+          <h3>Dankbarkeit</h3>
+          <p>Nicht als naives Positiv-Denken — sondern als bewusste Wahrnehmung dessen, was schon da ist. Die Begrenztheit des Lebens macht Augenblicke kostbar.</p>
+          <div class="tool-key">Schlüsselprinzip: <strong>Memento mori &amp; Fülle sehen</strong></div>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon">⬡</div>
+          <h3>Resilienz</h3>
+          <p>Nicht die Abwesenheit von Schmerz. Sondern die Fähigkeit, nach dem Fallen wieder aufzustehen — und dabei mehr zu verstehen als zuvor.</p>
+          <div class="tool-key">Schlüsselprinzip: <strong>Wachstum durch Widerstand</strong></div>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon">◐</div>
+          <h3>Radikale Akzeptanz</h3>
+          <p>Manche Dinge sind, wie sie sind. Das anzunehmen ist keine Kapitulation — es ist die Voraussetzung dafür, dass du danach wirklich handeln kannst.</p>
+          <div class="tool-key">Schlüsselprinzip: <strong>Akzeptanz als Kraft</strong></div>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon">◈</div>
+          <h3>Selbstbetrachtung</h3>
+          <p>Marcus Aurelius führte Tagebuch — nicht für die Nachwelt, sondern für sich selbst. Selbstbetrachtung ist der kürzeste Weg zu ehrlicher Selbsterkenntnis.</p>
+          <div class="tool-key">Schlüsselprinzip: <strong>Innerer Zeuge</strong></div>
+        </div>
+      </div>
+
+      <div class="tools-footer">
+        <p>Diese Werkzeuge machen dich nicht besser als andere. Sie bringen dich <em>näher an dich selbst</em> — an innere Zufriedenheit und Ausgeglichenheit. Das kann ein langer, manchmal schmerzhafter Weg sein.
+          <br/>
+          Er lohnt sich.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ZUFRIEDENHEIT -->
+  <section class="section section-mid" id="zufriedenheit">
+    <div class="container">
+      <h2 class="section-split-heading">Glück <span class="heading-vs">vs.</span><br/><em>Zufriedenheit</em></h2>
+      <div class="section-grid">
+        <div class="section-text">
+          <p class="lead">
+            Wer sagt „Ich will einfach nur glücklich sein" — hat vielleicht noch nicht die Tiefe verstanden.
+          </p>
+          <p>
+            Glück ist temporär. Es kommt, es geht. Und das ist gut so — denn nur durch seinen Kontrast, durch seine Vergänglichkeit, wird Glück überhaupt wahrnehmbar. Ein Leben nur aus Hochgefühlen wäre kein Reich­tum, sondern Taubheit.
+          </p>
+          <p>
+            Zufriedenheit hingegen ist etwas anderes. Sie ist kein Gefühl, das passiert — sie ist eine Haltung, die man kultivieren lernen kann. Man kann an einem schwierigen Tag, voller Erschöpfung und Sorge, trotzdem innerlich zufrieden sein. Mit dem Leben im Ganzen. Mit dem Weg, den man geht.
+          </p>
+          <blockquote>
+            „So traurig es klingt, so wahr ist es auch: Erst die Begrenztheit des Lebens macht Augenblicke so kostbar."
+          </blockquote>
+          <p>
+            Beides anzunehmen — das Schöne und das Schmerzhafte — in einer wohlwollend Art: Das ist das Leben in seiner Gänze. Mit allem, was dazu gehört, mit allem was ist.
+          </p>
+        </div>
+        <div class="section-aside">
+          <div class="compare-block">
+            <div class="compare-item">
+              <h4>Glück</h4>
+              <ul>
+                <li>Temporär und flüchtig</li>
+                <li>Kommt und geht</li>
+                <li>Kann nicht erzwungen werden</li>
+                <li>Wertvoll gerade weil selten</li>
+              </ul>
+            </div>
+            <div class="compare-divider">vs.</div>
+            <div class="compare-item">
+              <h4>Zufriedenheit</h4>
+              <ul>
+                <li>Kultivierbar &amp; stabil</li>
+                <li>Auch an schlechten Tagen möglich</li>
+                <li>Erfordert Haltung &amp; Praxis</li>
+                <li>Das eigentliche Ziel</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DER WEG -->
+  <section class="section section-final" id="weg">
+    <div class="container">
+      <div class="final-content">
+        <h2>Der Weg<br/><em>hat einen Anfang,<br/>Stationen, die man schätzen lernen kann und kein vorhersehbares Ende.</em></h2>
+        <p class="lead">
+          Nein, es ist nicht immer leicht. Auch ich habe Höhen und Tiefen — hinter und noch vor mir und auchich werde mich nicht immer freuen  aber versuchen daran zu wachsen das leben auszuhalten, mich daran zu erfreuen und mich daran erfreuen auch dinge weiter geben ebenso wie lernen zu dürfen.
+        <br/>
+        Der Weg ist das Ziel das ende kennen wir wohl also lasst uns doch den Weg genießen und uns an ihm erfreuen.
+        </p>
+        <p>
+          Ich bin auf einem Weg, der einen Anfang hat, sein Ende nicht kennt, und der die Stationen schätzt. Keine großen Ankündigungen. Kein perfektes Ziel. Nur die aufrichtige Bereitschaft, sich selbst zu begegnen — ehrlich, geduldig, wohlwollend.
+        </p>
+        <p>
+          Weg vom Lärm der Welt. Weg vom ständigen Vergleichen und Bewerten. Hin zu mehr Fühlen und weniger Denken. Hin zu Entscheidungen, die du wirklich trägst — und zu den Konsequenzen, die dich formen.
+        </p>
+        <div class="final-affirmations">
+          <div class="affirmation">Selbstrespekt ist kein Hochmut.<br/>Er ist die Voraussetzung für alles andere.</div>
+          <div class="affirmation">Grenzen zu kennen — den eigenen Wirkraum — ist keine Schwäche.<br/>Es ist Klarheit.</div>
+          <div class="affirmation">Beides annehmen: das Schöne und das Schmerzhafte.<br/>Das ist das Leben in seiner Gänze.</div>
+        </div>
+        <div class="final-closing">
+          <div class="closing-mark">◈</div>
+          <p class="closing-text">
+            Again
+            <br/>
+            The wealthiest thing in live, is owning your life — <em>own it!</em>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-mark">◈</span> InnerWork <span class="logo-sub">— im inneren</span>
+      </div>
+      <p class="footer-motto">Der Weg beginnt dort, wo du gerade stehst, jetzt.</p>
+      <p class="footer-copy">Philosophie · Selbstreflexion · Inneres Wachstum</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
