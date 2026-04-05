@@ -93,22 +93,15 @@ function closeModal(id) {
   document.body.style.overflow = '';
 }
 
-document.getElementById('openImpressum').addEventListener('click', () => openModal('impressumModal'));
-document.getElementById('closeImpressum').addEventListener('click', () => closeModal('impressumModal'));
 document.getElementById('openKontakt').addEventListener('click', () => openModal('kontaktModal'));
 document.getElementById('closeKontakt').addEventListener('click', () => closeModal('kontaktModal'));
 
-['impressumModal', 'kontaktModal'].forEach(id => {
-  document.getElementById(id).addEventListener('click', e => {
-    if (e.target === e.currentTarget) closeModal(id);
-  });
+document.getElementById('kontaktModal').addEventListener('click', e => {
+  if (e.target === e.currentTarget) closeModal('kontaktModal');
 });
 
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') {
-    closeModal('impressumModal');
-    closeModal('kontaktModal');
-  }
+  if (e.key === 'Escape') closeModal('kontaktModal');
 });
 
 // --- Scroll reveal ---
