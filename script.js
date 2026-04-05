@@ -5,6 +5,16 @@
 // --- Navbar scroll effect ---
 const navbar = document.getElementById('navbar');
 
+// --- Logo: nach oben wenn gescrollt, nach unten wenn oben ---
+document.getElementById('navLogo').addEventListener('click', e => {
+  e.preventDefault();
+  if (window.scrollY > 80) {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  } else {
+    document.getElementById('footer').scrollIntoView({ behavior: 'smooth' });
+  }
+});
+
 window.addEventListener('scroll', () => {
   if (window.scrollY > 40) {
     navbar.classList.add('scrolled');

@@ -982,7 +982,7 @@ body::before {
 .footer-divider {
   width: 55%;
   max-width: 360px;
-  height: 6px;
+  height: 2px;
   display: block;
   margin: 0.25rem auto;
 }
@@ -1008,6 +1008,10 @@ body::before {
 }
 
 .footer-link:hover { color: var(--gold); }
+
+a.footer-link {
+  text-decoration: none;
+}
 
 .footer-link-sep {
   color: var(--text-faint);
@@ -1238,7 +1242,9 @@ body::before {
 
   .tools-grid { grid-template-columns: repeat(2, 1fr); }
 
-  .hero-title { font-size: 2.75rem; }
+  .hero-title    { font-size: 2.67rem; }
+  .hero-eyebrow  { font-size: 0.73rem; }
+  .hero-sub      { font-size: 1.02rem; }
 
   .band-inner { gap: 1rem; }
 
