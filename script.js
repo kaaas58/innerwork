@@ -78,7 +78,37 @@ if (savedTheme === 'light') {
     const isLight = document.body.classList.toggle('light');
     syncIcons(isLight);
     localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    navOverlay.classList.remove('open');
+    navToggle.classList.remove('open');
   });
+});
+
+// --- Modals ---
+function openModal(id) {
+  document.getElementById(id).classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal(id) {
+  document.getElementById(id).classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.getElementById('openImpressum').addEventListener('click', () => openModal('impressumModal'));
+document.getElementById('closeImpressum').addEventListener('click', () => closeModal('impressumModal'));
+document.getElementById('openKontakt').addEventListener('click', () => openModal('kontaktModal'));
+document.getElementById('closeKontakt').addEventListener('click', () => closeModal('kontaktModal'));
+
+['impressumModal', 'kontaktModal'].forEach(id => {
+  document.getElementById(id).addEventListener('click', e => {
+    if (e.target === e.currentTarget) closeModal(id);
+  });
+});
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    closeModal('impressumModal');
+    closeModal('kontaktModal');
+  }
 });
 
 // --- Scroll reveal ---

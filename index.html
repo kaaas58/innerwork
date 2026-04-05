@@ -26,7 +26,7 @@
       <div class="nav-right nav-right--desktop">
         <ul class="nav-links" id="navLinks">
           <li><a href="#krisen">Lebenskrisen</a></li>
-          <li><a href="#wer-bin-ich">Wer bin ich?</a></li>
+          <li><a href="#wer-bin-ich">Wer bist du?</a></li>
           <li><a href="#gegenwart">Gegenwart</a></li>
           <li><a href="#werkzeuge">Werkzeuge</a></li>
           <li><a href="#zufriedenheit">Zufriedenheit</a></li>
@@ -56,7 +56,7 @@
   <div class="nav-overlay" id="navOverlay">
     <ul class="nav-overlay-links">
       <li><a href="#krisen">Lebenskrisen</a></li>
-      <li><a href="#wer-bin-ich">Wer bin ich?</a></li>
+      <li><a href="#wer-bin-ich">Wer bist du?</a></li>
       <li><a href="#gegenwart">Gegenwart</a></li>
       <li><a href="#werkzeuge">Werkzeuge</a></li>
       <li><a href="#zufriedenheit">Zufriedenheit</a></li>
@@ -178,7 +178,7 @@
   <section class="section section-mid" id="wer-bin-ich">
     <div class="container">
       <h2 class="section-center-title">
-        Wer<br/><em>bin ich?</em>
+        Wer bist<br/><em>du?</em>
       </h2>
       <p class="section-center-lead">
         Du bist nicht dein Körper. Nicht deine Gedanken. Nicht dein Beruf. Nicht die Rolle, die andere für dich vorgesehen haben. Wer ist das ich? Wo sitzt es? 
@@ -400,13 +400,90 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-inner">
-      <div class="footer-logo">
+      <a href="#home" class="footer-logo">
         <span class="logo-mark">◈</span> InnerWork <span class="logo-sub">— im Inneren</span>
-      </div>
+      </a>
       <p class="footer-motto">Der Weg beginnt dort, wo du gerade stehst, jetzt.</p>
       <p class="footer-copy">Philosophie · Selbstreflexion · Inneres Wachstum</p>
+      <svg class="footer-divider" viewBox="0 0 300 6" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="divGrad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%"   stop-color="#c9a96e" stop-opacity="0"/>
+            <stop offset="50%"  stop-color="#c9a96e" stop-opacity="0.75"/>
+            <stop offset="100%" stop-color="#c9a96e" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <ellipse cx="150" cy="3" rx="150" ry="2.5" fill="url(#divGrad)"/>
+      </svg>
+      <div class="footer-links">
+        <button class="footer-link" id="openImpressum">Impressum</button>
+        <span class="footer-link-sep">·</span>
+        <button class="footer-link" id="openKontakt">Kontakt</button>
+      </div>
+      <p class="footer-legal">© 2025 InnerWork · Alle Inhalte dienen der persönlichen Reflexion und ersetzen keine professionelle Beratung.</p>
     </div>
   </footer>
+
+  <!-- IMPRESSUM MODAL -->
+  <div class="modal-overlay" id="impressumModal" role="dialog" aria-modal="true" aria-label="Impressum">
+    <div class="modal-box">
+      <button class="modal-close" id="closeImpressum" aria-label="Schließen">✕</button>
+      <h2 class="modal-title">Impressum &amp; Datenschutz</h2>
+      <p class="modal-sub">Angaben gemäß § 5 TMG sowie Datenschutzhinweise für dieses Angebot.</p>
+
+      <h3>Impressum</h3>
+      <p>Angaben gemäß § 5 TMG</p>
+      <p>Lukas Trapp<br/>Kreyßigstraße 16<br/>55118 Mainz</p>
+
+      <h3>Kontakt</h3>
+      <p>E-Mail: <a href="mailto:info.innerwork@gmx.de">info.innerwork@gmx.de</a></p>
+
+      <h3>Haftungsausschluss</h3>
+      <h4>Haftung für Inhalte</h4>
+      <p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
+      <h4>Haftung für Links</h4>
+      <p>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
+      <h4>Urheberrecht</h4>
+      <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.</p>
+
+      <h3>Datenschutz</h3>
+      <p>Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.</p>
+      <p>Die Nutzung unserer Website ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.</p>
+      <h4>Cookies</h4>
+      <p>Diese Website verwendet ausschließlich technisch notwendige Cookies (z. B. zur Speicherung der Hell-/Dunkel-Einstellung). Es werden keine Tracking- oder Werbe-Cookies gesetzt.</p>
+      <h4>Server-Log-Files</h4>
+      <p>Der Provider der Seiten erhebt und speichert automatisch Informationen in Server-Log-Files (Browsertyp, Betriebssystem, Referrer URL, Hostname, Uhrzeit der Serveranfrage). Diese Daten sind nicht bestimmten Personen zuordenbar und werden nicht mit anderen Datenquellen zusammengeführt.</p>
+      <p class="modal-source">Quelle: e-recht24.de</p>
+    </div>
+  </div>
+
+  <!-- KONTAKT MODAL -->
+  <div class="modal-overlay" id="kontaktModal" role="dialog" aria-modal="true" aria-label="Kontakt">
+    <div class="modal-box modal-box--sm">
+      <button class="modal-close" id="closeKontakt" aria-label="Schließen">✕</button>
+      <h2 class="modal-title">Kontakt</h2>
+      <p class="modal-intro">Ich werde dich nicht umfassend beraten können — aber vielleicht kann ich dir einen Impuls geben oder Anlaufstellen nennen, die auch mir gut und effektiv geholfen haben. Schreib mir gern.</p>
+      <form class="kontakt-form" action="https://formsubmit.co/info.innerwork@gmx.de" method="POST">
+        <input type="hidden" name="_subject" value="Kontaktanfrage InnerWork">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="basic">
+        <input type="hidden" name="_next" value="">
+        <div class="form-group">
+          <label for="kName">Name</label>
+          <input type="text" id="kName" name="name" placeholder="Dein Name" required/>
+        </div>
+        <div class="form-group">
+          <label for="kEmail">E-Mail</label>
+          <input type="email" id="kEmail" name="email" placeholder="deine@email.de" required/>
+        </div>
+        <div class="form-group">
+          <label for="kMsg">Nachricht</label>
+          <textarea id="kMsg" name="nachricht" rows="5" placeholder="Was beschäftigt dich?" required></textarea>
+        </div>
+        <button type="submit" class="form-submit">Absenden</button>
+      </form>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
