@@ -165,6 +165,7 @@ body::before {
 .logo-sub {
   font-size: 0.95em;
   color: var(--gold-dim);
+  margin-left: 0.7rem;
   font-weight: 300;
   letter-spacing: 0.04em;
 }
@@ -1261,19 +1262,7 @@ a.footer-link {
 @media (max-width: 385px) {
   .nav-logo { font-size: 1.125rem; }
 
-  .logo-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.05rem;
-  }
-
   .logo-dash { display: none; }
-
-  .logo-sub {
-    font-size: 0.72em;
-    letter-spacing: 0.06em;
-  }
 }
 
 @media (max-width: 730px) {
