@@ -66,11 +66,13 @@ function syncIcons(isLight) {
   });
 }
 
-// Persist preference
+// Persist preference — default ist immer Dark Mode
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme === 'light') {
   document.body.classList.add('light');
   syncIcons(true);
+} else {
+  localStorage.setItem('theme', 'dark');
 }
 
 [themeToggle, themeToggleMobile].forEach(btn => {

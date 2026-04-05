@@ -155,9 +155,11 @@
     window.addEventListener('scroll', () => {
       navbar.classList.toggle('scrolled', window.scrollY > 40);
     });
-    // Theme persist
+    // Theme persist — default ist immer Dark Mode
     if (localStorage.getItem('theme') === 'light') {
       document.body.classList.add('light');
+    } else {
+      localStorage.setItem('theme', 'dark');
     }
   </script>
 </body>

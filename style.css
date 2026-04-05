@@ -1289,22 +1289,22 @@ body::before {
    LIGHT MODE
    ============================================= */
 body.light {
-  --bg-deep:    #d8d4cc;
-  --bg-dark:    #cdc9c1;
-  --bg-mid:     #c8c4bc;
-  --bg-surface: #bfbbb3;
-  --bg-card:    #d2cec6;
+  --bg-deep:    #f0ece4;
+  --bg-dark:    #e8e4dc;
+  --bg-mid:     #e2ddd6;
+  --bg-surface: #d8d3cb;
+  --bg-card:    #ece8e0;
 
-  --text:       #1a1814;
-  --text-dim:   #3e3b36;
-  --text-faint: #4a4744;
+  --text:       #100e0a;
+  --text-dim:   #2a2722;
+  --text-faint: #3e3b36;
 
-  --border:     rgba(100, 75, 40, 0.25);
-  --border-dim: rgba(0, 0, 0, 0.12);
+  --border:     rgba(90, 60, 20, 0.35);
+  --border-dim: rgba(0, 0, 0, 0.18);
 
-  --gold:       #7a5520;
-  --gold-light: #5a3e14;
-  --gold-dim:   #8a6828;
+  --gold:       #6a4618;
+  --gold-light: #4a3010;
+  --gold-dim:   #7a5820;
 }
 
 body.light::before {
@@ -1313,11 +1313,11 @@ body.light::before {
 }
 
 body.light .navbar {
-  background: rgba(216, 212, 204, 0.88);
+  background: rgba(240, 236, 228, 0.90);
 }
 
 body.light .navbar.scrolled {
-  background: rgba(216, 212, 204, 0.98);
+  background: rgba(240, 236, 228, 0.98);
 }
 
 body.light .hero-bg-pattern {
@@ -1327,7 +1327,7 @@ body.light .hero-bg-pattern {
 }
 
 body.light .nav-right {
-  background: rgba(216, 212, 204, 0.98);
+  background: rgba(240, 236, 228, 0.98);
 }
 
 body.light .heading-vs           { color: #3a3530; }
