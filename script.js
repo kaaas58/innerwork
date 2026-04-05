@@ -56,23 +56,29 @@ navOverlay.querySelectorAll('a').forEach(link => {
 });
 
 // --- Dark / Light mode toggle ---
-const themeToggle = document.getElementById('themeToggle');
-const iconMoon    = themeToggle.querySelector('.icon-moon');
-const iconSun     = themeToggle.querySelector('.icon-sun');
+const themeToggle       = document.getElementById('themeToggle');
+const themeToggleMobile = document.getElementById('themeToggleMobile');
+
+function syncIcons(isLight) {
+  [themeToggle, themeToggleMobile].forEach(btn => {
+    btn.querySelector('.icon-moon').style.display = isLight ? 'none'  : 'block';
+    btn.querySelector('.icon-sun').style.display  = isLight ? 'block' : 'none';
+  });
+}
 
 // Persist preference
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme === 'light') {
   document.body.classList.add('light');
-  iconMoon.style.display = 'none';
-  iconSun.style.display  = 'block';
+  syncIcons(true);
 }
 
-themeToggle.addEventListener('click', () => {
-  const isLight = document.body.classList.toggle('light');
-  iconMoon.style.display = isLight ? 'none'  : 'block';
-  iconSun.style.display  = isLight ? 'block' : 'none';
-  localStorage.setItem('theme', isLight ? 'light' : 'dark');
+[themeToggle, themeToggleMobile].forEach(btn => {
+  btn.addEventListener('click', () => {
+    const isLight = document.body.classList.toggle('light');
+    syncIcons(isLight);
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+  });
 });
 
 // --- Scroll reveal ---

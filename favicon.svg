@@ -1,21 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
   <rect width="32" height="32" rx="6" fill="#0c0c12"/>
   <text
-    x="7" y="23"
+    x="-5" y="23"
     font-family="Georgia, serif"
     font-size="18"
     font-style="italic"
     font-weight="400"
     fill="#c9a96e"
-    transform="rotate(-8, 7, 23)"
+    transform="rotate(-8, -5, 23)"
   >I</text>
   <text
-    x="14" y="23"
+    x="2" y="23"
     font-family="Georgia, serif"
     font-size="18"
     font-style="italic"
     font-weight="400"
     fill="#e0c48a"
-    transform="rotate(-8, 14, 23)"
+    transform="rotate(-8, 2, 23)"
   >W</text>
 </svg>

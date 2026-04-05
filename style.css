@@ -1003,7 +1003,7 @@ body::before {
   .section-grid.reverse > * { direction: ltr; }
 
   .tools-grid { grid-template-columns: repeat(3, 1fr); }
-  .identity-grid { grid-template-columns: 1fr; }
+  .identity-grid { grid-template-columns: repeat(2, 1fr); }
 
   .hero-quote-badge { display: none; }
 }
@@ -1033,6 +1033,34 @@ body::before {
     width: 44px;
     height: 44px;
   }
+}
+
+@media (max-width: 380px) {
+  .logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.05rem;
+  }
+
+  .logo-dash { display: none; }
+
+  .logo-sub {
+    font-size: 0.72em;
+    letter-spacing: 0.06em;
+  }
+}
+
+@media (max-width: 730px) {
+  .identity-card h4,
+  .tool-card h3,
+  .card-highlight h3 { font-size: 0.72rem; }
+
+  .identity-card p,
+  .tool-card p,
+  .card-highlight li { font-size: 0.65rem; }
+
+  .tool-key { font-size: 0.55rem; }
 }
 
 /* =============================================
