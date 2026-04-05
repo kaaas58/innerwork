@@ -1247,9 +1247,43 @@ a.footer-link {
 
   .tools-grid { grid-template-columns: repeat(2, 1fr); }
 
-  .hero-title    { font-size: 2.67rem; }
-  .hero-eyebrow  { font-size: 0.73rem; }
-  .hero-sub      { font-size: 1.02rem; }
+  .hero-title    { font-size: 2.14rem; }
+  .hero-eyebrow  { font-size: 0.58rem; }
+  .hero-sub      { font-size: 0.82rem; }
+
+  .section-text h2,
+  .section-split-heading,
+  .section-center-title { font-size: clamp(1.4rem, 4vw, 2rem); }
+
+  .section-text .lead,
+  .final-content .lead  { font-size: 0.84rem; }
+
+  .section-text p,
+  .final-content p      { font-size: 0.84rem; }
+
+  .footer-motto  { font-size: 0.92rem; }
+  .footer-copy   { font-size: 0.68rem; }
+  .footer-legal  { font-size: 0.62rem; }
+
+  .btn-scroll {
+    font-size: 0.68rem;
+    padding: 0.6rem 1.28rem;
+  }
+
+  .nav-overlay-links a {
+    font-size: 0.94rem;
+    padding: 0.72rem 2.13rem;
+  }
+
+  .theme-toggle {
+    width: 37px;
+    height: 37px;
+  }
+
+  .form-submit {
+    font-size: 0.72rem;
+    padding: 0.55rem 1.49rem;
+  }
 
   .band-inner { gap: 1rem; }
 
